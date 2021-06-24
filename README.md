@@ -1,2 +1,2 @@
 # CursoEmVideo-Python
- Em busca de ser um Data Science
+Em busca de ser um Data Science
