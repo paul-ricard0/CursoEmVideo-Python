@@ -1,7 +1,7 @@
 #desafio_057.py
 c = 1
 while c != 0:
-    sexo = input('Qual seu sexo (M | F) ? ')
+    sexo = input('Qual seu sexo (M | F) ? ').strip().upper[0]
     
     if sexo == 'M':
         c = 0

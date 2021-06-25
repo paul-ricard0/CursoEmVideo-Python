@@ -3,10 +3,10 @@ razao = int(input('Entre com a razão dessa PA: '))
 c=0
 x=0
 
-while c < 2:
+while c < 10:
+    
+    print('{} ~> '.format(x), end='')
     x = x + razao
-    total = termoP + x
-    print(total)
     c += 1
 
 print('FIM!!!')

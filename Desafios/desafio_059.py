@@ -7,7 +7,12 @@ while x != 0:
     val1 = float(input('Entre com o primeiro número: '))
     val2 = float(input('Entre com o segundo número: '))
     
-    print('\n[1] Somar \n[2] Multiplicar \n[3] Qual Maior \n[4] Novos números \n[5] Sair do Programa')
+    print('''   \n[1] Somar 
+[2] Multiplicar 
+[3] Qual Maior 
+[4] Novos números 
+[5] Sair do Programa''')
+    
     do = int(input('O que vc deseja fazer? '))
 
     if do == 1:
