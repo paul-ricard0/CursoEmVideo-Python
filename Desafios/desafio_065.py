@@ -19,4 +19,4 @@ while(next in 'Ss' ):
 
 md = total / qtd
 
-print('~'*30 + 'Maior: {} \nMenor: {:.2f} \nMédia: {}'.format(maior, menor, md, qtd) + '~'*30 )
+print('~'*30 + 'Maior: {} \nMenor: {:.2f} \nMédia: {} \n'.format(maior, menor, md, qtd) + '~'*30 )

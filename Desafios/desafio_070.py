@@ -1,28 +1,31 @@
-c = 'S'
-ttgasto = qtprodutos = menorPreco = qtd1000 = 0
+nomeMenor = ' '
+key = totGasto = totmil = 0
 
-while c in 'Ss':
-    print('     COMPRE O PRODUTO')
-    print('*'*30)
+print('     COMPRE O PRODUTO')
+print('*'*30)
+while True:
 
     nomeProduto = str(input('Qual nome do produtor? '))
-    preco = float(input('Qual preco do produto? '))
+    preco = float(input('Preço: R$'))
 
-    if ttgasto == 0:
-        menorProduto = nomeProduto 
-    if preco <= menorPreco and ttgasto != 0:
-        menorProduto = nomeProduto
+    totGasto += preco
 
-    ttgasto += preco
-    if preco < 1000:
-        qtd1000 += 1
+    if preco > 1000:
+        totmil += 1
+    
+    if key == 0 or preco < menorPreco: 
+        menorPreco = preco
+        nomeMenor = nomeProduto
+        key += 1
 
-    print('-'*30)
-    c = input('QUER CADASTRAR MAIS PESSOAS [S/N]? ').strip().upper()
-    print('-'*30)   
 
+    print('x'*30)
+    while fim not in 'SsNn':
+        fim = input('Quer continuar [S/N]? ').strip().upper()[0]
+    if fim == 'Nn':
+        break
 
 print('\n===== FIM DO PROGRAMA =====')
-print('Total gasto: {}'.format(ttgasto))
-print('Quantos custam mais de R$1000: {}'.format(qtd1000))
-print('O produto mais barato foi: {}'.format(nomeProduto))
+print(f'Total gasto: {totGasto:.2f}')
+print(f'Total que custa mais de R$1000: {totmil}')
+print(f'O produto mais barato foi {nomeMenor} que custa {menorPreco}')

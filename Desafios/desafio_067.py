@@ -9,7 +9,7 @@ while f != 0:
     if num > 0:
         while x < 10:
             x += 1
-            print('{} x {} = {}'.format(num, x, (num * x)))
+            print(f'{num} x {x} = {num * x}')
     else:
         f = 0
         print('FIM DO PROGRAMA!!!!!!!!!')
